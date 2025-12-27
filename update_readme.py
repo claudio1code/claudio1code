@@ -94,8 +94,8 @@ def get_user_data(token, login):
 def get_projects(token, user_id):
     headers = {"Authorization": f"Bearer {token}"}
 
-    # Fetch projects from Cursus 21
-    url = f"{API_URL}/v2/users/{user_id}/projects_users?page[size]=100&sort=-updated_at&filter[cursus]=21"
+    # Fetch all projects (filtering happens in Python via whitelist)
+    url = f"{API_URL}/v2/users/{user_id}/projects_users?page[size]=100&sort=-updated_at"
 
     projects = []
     page = 1
