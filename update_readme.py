@@ -1,5 +1,4 @@
 import os
-import urllib.parse
 from datetime import datetime
 
 import requests
@@ -11,6 +10,50 @@ SECRET = os.environ.get("SECRET_42")
 USER_LOGIN = os.environ.get("USER_42")
 
 API_URL = "https://api.intra.42.fr"
+# Base URL for the artistic badges
+BADGE_BASE_URL = (
+    "https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges"
+)
+
+# Manual mapping for common projects to ensure correct image filenames
+# Format: "project_slug": "image_filename_without_extension"
+# The repo typically uses 'm' suffix for mandatory part badges
+PROJECT_MAPPING = {
+    "libft": "libftm",
+    "get-next-line": "get_next_linem",
+    "get_next_line": "get_next_linem",
+    "ft-printf": "ft_printfm",
+    "ft_printf": "ft_printfm",
+    "born2beroot": "born2berootm",
+    "push-swap": "push_swapm",
+    "push_swap": "push_swapm",
+    "minitalk": "minitalkm",
+    "pipex": "pipexm",
+    "so-long": "so_longm",
+    "so_long": "so_longm",
+    "fract-ol": "fract_olm",
+    "fract_ol": "fract_olm",
+    "philosophers": "philosophersm",
+    "minishell": "minishellm",
+    "cub3d": "cub3dm",
+    "minirt": "minirtm",
+    "netpractice": "netpracticem",
+    "cpp-module-00": "cpp00m",
+    "cpp-module-01": "cpp01m",
+    "cpp-module-02": "cpp02m",
+    "cpp-module-03": "cpp03m",
+    "cpp-module-04": "cpp04m",
+    "cpp-module-05": "cpp05m",
+    "cpp-module-06": "cpp06m",
+    "cpp-module-07": "cpp07m",
+    "cpp-module-08": "cpp08m",
+    "cpp-module-09": "cpp09m",
+    "inception": "inceptionm",
+    "webserv": "webservm",
+    "ft-irc": "ft_ircm",
+    "ft_irc": "ft_ircm",
+    "ft-transcendence": "ft_transcendencem",
+}
 
 
 def get_token():
@@ -42,7 +85,6 @@ def get_projects(token, user_id):
     headers = {"Authorization": f"Bearer {token}"}
 
     # Filter strictly for Cursus 21 (42 Cursus/Cadet)
-    # This automatically excludes Piscine, Discovery, etc.
     url = f"{API_URL}/v2/users/{user_id}/projects_users?page[size]=100&sort=-updated_at&filter[cursus]=21"
 
     projects = []
@@ -55,7 +97,7 @@ def get_projects(token, user_id):
         if not data:
             break
         projects.extend(data)
-        if page >= 5:  # Safety limit
+        if page >= 5:
             break
         page += 1
 
@@ -84,22 +126,21 @@ def generate_readme(user_data, projects):
     # Sort projects by marked_at date (descending)
     projects.sort(key=lambda x: x["marked_at"] if x["marked_at"] else "", reverse=True)
 
-    # Process projects to generate Shields.io Badge URL
+    # Process projects to generate Image Badge URL
     processed_projects = []
     for p in projects:
-        name = p["project"]["name"]
-        score = p["final_mark"]
+        slug = p["project"]["slug"]
 
-        # Color Logic: 100+ = Success (Green), else Blue
-        color = "2ea44f" if score >= 100 else "007ec6"
+        # Determine image filename
+        if slug in PROJECT_MAPPING:
+            image_name = PROJECT_MAPPING[slug]
+        else:
+            # Fallback: try appending 'm' or just using slug
+            # Most badges in that repo follow slug + 'm' pattern
+            image_name = f"{slug}m"
 
-        # Encode name for URL (e.g., "Born2beroot" is safe, "C++ - Module 01" needs encoding)
-        safe_name = urllib.parse.quote(name)
-
-        # Generate stable badge URL
-        p["badge_url"] = (
-            f"https://img.shields.io/badge/{safe_name}-{score}-{color}?style=for-the-badge&logo=42&logoColor=white"
-        )
+        # Build URL
+        p["badge_url"] = f"{BADGE_BASE_URL}/{image_name}.png"
         processed_projects.append(p)
 
     # Get Level for Cursus 21

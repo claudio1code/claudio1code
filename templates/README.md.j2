@@ -43,7 +43,7 @@
 <div align="center">
   {% for project in projects %}
   <a href="https://github.com/claudio1code?tab=repositories&q={{ project.project.slug }}" target="_blank">
-    <img src="{{ project.badge_url }}" alt="{{ project.project.name }}" height="35" />
+    <img src="{{ project.badge_url }}" alt="{{ project.project.name }}" width="150" height="150" />
   </a>
   {% endfor %}
 </div>
