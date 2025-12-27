@@ -67,7 +67,7 @@
 
   <!-- Fract-ol -->
   <a href="https://github.com/claudio1code?tab=repositories&q=fract-ol" target="_blank">
-    <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/fract_olm.png" alt="Fract-ol" width="150" height="150" />
+    <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/fract-olm.png" alt="Fract-ol" width="150" height="150" />
   </a>
 
   <!-- Philosophers -->
