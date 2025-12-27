@@ -1,4 +1,5 @@
 import os
+import urllib.parse
 from datetime import datetime
 
 import requests
@@ -10,12 +11,6 @@ SECRET = os.environ.get("SECRET_42")
 USER_LOGIN = os.environ.get("USER_42")
 
 API_URL = "https://api.intra.42.fr"
-
-# Base URL for project badges (Community maintained)
-# Using a popular repo for badges: https://github.com/ayogun/42-project-badges
-BADGE_BASE_URL = (
-    "https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges"
-)
 
 
 def get_token():
@@ -45,7 +40,10 @@ def get_user_data(token, login):
 
 def get_projects(token, user_id):
     headers = {"Authorization": f"Bearer {token}"}
-    url = f"{API_URL}/v2/users/{user_id}/projects_users?page[size]=100&sort=-updated_at"
+
+    # Filter strictly for Cursus 21 (42 Cursus/Cadet)
+    # This automatically excludes Piscine, Discovery, etc.
+    url = f"{API_URL}/v2/users/{user_id}/projects_users?page[size]=100&sort=-updated_at&filter[cursus]=21"
 
     projects = []
     page = 1
@@ -57,7 +55,7 @@ def get_projects(token, user_id):
         if not data:
             break
         projects.extend(data)
-        if page >= 5:  # Limit to avoid infinite loops
+        if page >= 5:  # Safety limit
             break
         page += 1
 
@@ -83,32 +81,41 @@ def generate_readme(user_data, projects):
     env = Environment(loader=FileSystemLoader("templates"))
     template = env.get_template("README.md.j2")
 
-    # Sort projects by date
+    # Sort projects by marked_at date (descending)
     projects.sort(key=lambda x: x["marked_at"] if x["marked_at"] else "", reverse=True)
 
-    # Process projects to add badge URL
-    # We map common project names to the badge repository filenames
+    # Process projects to generate Shields.io Badge URL
     processed_projects = []
     for p in projects:
-        slug = p["project"]["slug"]
-        # Basic mapping logic: most slugs match the filename in the repo
-        # e.g. libft -> libftm, get_next_line -> get_next_linem
-        # The repo 'ayogun/42-project-badges' usually appends 'e' or 'm' sometimes,
-        # but let's try the direct slug first or standard mapping.
-        # Actually, looking at the repo, they are usually just the slug.
+        name = p["project"]["name"]
+        score = p["final_mark"]
 
-        # We will pass the slug to the template and build the URL there or here.
-        # Let's clean the slug if needed.
-        p["badge_url"] = f"{BADGE_BASE_URL}/{slug}.png"
+        # Color Logic: 100+ = Success (Green), else Blue
+        color = "2ea44f" if score >= 100 else "007ec6"
+
+        # Encode name for URL (e.g., "Born2beroot" is safe, "C++ - Module 01" needs encoding)
+        safe_name = urllib.parse.quote(name)
+
+        # Generate stable badge URL
+        p["badge_url"] = (
+            f"https://img.shields.io/badge/{safe_name}-{score}-{color}?style=for-the-badge&logo=42&logoColor=white"
+        )
         processed_projects.append(p)
 
+    # Get Level for Cursus 21
     cursus_42 = next(
         (c for c in user_data["cursus_users"] if c["cursus"]["id"] == 21), None
     )
 
+    level_badge = ""
+    if cursus_42:
+        lvl = cursus_42["level"]
+        level_badge = f"https://img.shields.io/badge/Level-{lvl}-000000?style=for-the-badge&logo=42&logoColor=white"
+
     rendered_readme = template.render(
         user=user_data,
         cursus=cursus_42,
+        level_badge=level_badge,
         projects=processed_projects,
         last_updated=datetime.now().strftime("%d/%m/%Y"),
     )
@@ -128,7 +135,7 @@ def main():
         user_data = get_user_data(token, USER_LOGIN)
         projects = get_projects(token, user_data["id"])
 
-        print(f"Found {len(projects)} projects. Generating README...")
+        print(f"Found {len(projects)} Cadet projects. Generating README...")
         generate_readme(user_data, projects)
         print("Done!")
     except Exception as e:
