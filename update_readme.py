@@ -10,39 +10,41 @@ SECRET = os.environ.get("SECRET_42")
 USER_LOGIN = os.environ.get("USER_42")
 
 API_URL = "https://api.intra.42.fr"
+
 # Base URL for the artistic badges
 BADGE_BASE_URL = (
     "https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges"
 )
 
-# Manual mapping for common projects to ensure correct image filenames
-# Format: "project_slug": "image_filename_without_extension"
-# The repo typically uses 'm' suffix for mandatory part badges
+# STRICT MAPPING (WHITELIST)
+# Only projects listed here will appear in the README.
+# Format: "api_slug": "badge_filename_without_extension"
 PROJECT_MAPPING = {
+    # Libft & Reloaded
     "libft": "libftm",
-    "get-next-line": "get_next_linem",
+    # Circle 1
     "get_next_line": "get_next_linem",
-    "ft-printf": "ft_printfm",
+    "get-next-line": "get_next_linem",
     "ft_printf": "ft_printfm",
+    "ft-printf": "ft_printfm",
     "born2beroot": "born2berootm",
-    "push-swap": "push_swapm",
+    # Circle 2
     "push_swap": "push_swapm",
+    "push-swap": "push_swapm",
     "minitalk": "minitalkm",
     "pipex": "pipexm",
-    "so-long": "so_longm",
     "so_long": "so_longm",
+    "so-long": "so_longm",
     "fract-ol": "fract_olm",
     "fract_ol": "fract_olm",
+    # Circle 3
     "philosophers": "philosophersm",
     "minishell": "minishellm",
+    # Circle 4
     "cub3d": "cub3dm",
     "minirt": "minirtm",
     "netpractice": "netpracticem",
-    "cpp-module-00": "cpp00m",
-    "cpp-module-01": "cpp01m",
-    "cpp-module-02": "cpp02m",
-    "cpp-module-03": "cpp03m",
-    "cpp-module-04": "cpp04m",
+    # Circle 5
     "cpp-module-05": "cpp05m",
     "cpp-module-06": "cpp06m",
     "cpp-module-07": "cpp07m",
@@ -50,9 +52,17 @@ PROJECT_MAPPING = {
     "cpp-module-09": "cpp09m",
     "inception": "inceptionm",
     "webserv": "webservm",
-    "ft-irc": "ft_ircm",
     "ft_irc": "ft_ircm",
+    "ft-irc": "ft_ircm",
+    # Circle 6
+    "ft_transcendence": "ft_transcendencem",
     "ft-transcendence": "ft_transcendencem",
+    # CPP Modules (00-04)
+    "cpp-module-00": "cpp00m",
+    "cpp-module-01": "cpp01m",
+    "cpp-module-02": "cpp02m",
+    "cpp-module-03": "cpp03m",
+    "cpp-module-04": "cpp04m",
 }
 
 
@@ -84,7 +94,7 @@ def get_user_data(token, login):
 def get_projects(token, user_id):
     headers = {"Authorization": f"Bearer {token}"}
 
-    # Filter strictly for Cursus 21 (42 Cursus/Cadet)
+    # Fetch projects from Cursus 21
     url = f"{API_URL}/v2/users/{user_id}/projects_users?page[size]=100&sort=-updated_at&filter[cursus]=21"
 
     projects = []
@@ -101,7 +111,7 @@ def get_projects(token, user_id):
             break
         page += 1
 
-    # Filter: Finished and Validated
+    # Filter: Only finished and validated
     valid_projects = [
         p for p in projects if p["status"] == "finished" and p["validated?"] is True
     ]
@@ -126,22 +136,19 @@ def generate_readme(user_data, projects):
     # Sort projects by marked_at date (descending)
     projects.sort(key=lambda x: x["marked_at"] if x["marked_at"] else "", reverse=True)
 
-    # Process projects to generate Image Badge URL
+    # STRICT FILTERING & BADGE MAPPING
     processed_projects = []
     for p in projects:
         slug = p["project"]["slug"]
 
-        # Determine image filename
+        # Only process if explicitly in our mapping
         if slug in PROJECT_MAPPING:
             image_name = PROJECT_MAPPING[slug]
+            p["badge_url"] = f"{BADGE_BASE_URL}/{image_name}.png"
+            processed_projects.append(p)
         else:
-            # Fallback: try appending 'm' or just using slug
-            # Most badges in that repo follow slug + 'm' pattern
-            image_name = f"{slug}m"
-
-        # Build URL
-        p["badge_url"] = f"{BADGE_BASE_URL}/{image_name}.png"
-        processed_projects.append(p)
+            # Skip exams, piscine projects, or anything not mapped
+            continue
 
     # Get Level for Cursus 21
     cursus_42 = next(
@@ -176,7 +183,7 @@ def main():
         user_data = get_user_data(token, USER_LOGIN)
         projects = get_projects(token, user_data["id"])
 
-        print(f"Found {len(projects)} Cadet projects. Generating README...")
+        print(f"Found {len(projects)} raw projects. Filtering whitelist...")
         generate_readme(user_data, projects)
         print("Done!")
     except Exception as e:
