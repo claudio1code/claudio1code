@@ -1,6 +1,9 @@
 name: Update 42 Portfolio
 
 on:
+    push:
+        branches:
+            - main
     schedule:
         - cron: "0 0 * * *" # Runs every day at midnight UTC
     workflow_dispatch: # Allows running manually from the Actions tab
