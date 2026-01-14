@@ -36,7 +36,7 @@
   </a>
   <!-- ft_printf -->
   <a href="https://github.com/claudio1code?tab=repositories&q=ft_printf" target="_blank">
-    <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/ft_printfm.png" alt="ft_printf" width="130" height="130" />
+    <img src="https://github.com/user-attachments/assets/e324d36f-df2d-4d24-9687-d95af3d3a766" alt="ft_printf" width="130" height="130" />
   </a>
   <!-- Get Next Line -->
   <a href="https://github.com/claudio1code?tab=repositories&q=get_next_line" target="_blank">
@@ -48,7 +48,7 @@
   </a>
   <!-- Pipex -->
   <a href="https://github.com/claudio1code?tab=repositories&q=pipex" target="_blank">
-    <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/pipexm.png" alt="Pipex" width="130" height="130" />
+    <img src="https://github.com/user-attachments/assets/47ed6319-fc2e-4959-9482-c32d21acd6c7" alt="Pipex" width="130" height="130" />
   </a>
   <!-- Fract-ol -->
   <a href="https://github.com/claudio1code?tab=repositories&q=fract-ol" target="_blank">
@@ -56,7 +56,7 @@
   </a>
   <!-- Philosophers -->
   <a href="https://github.com/claudio1code?tab=repositories&q=philosophers" target="_blank">
-    <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/philosophersm.png" alt="Philosophers" width="130" height="130" />
+    <img src="https://github.com/ayogun/42-project-badges/raw/main/badges/philosopherse.png" alt="Philosophers" width="130" height="130" />
   </a>
 </div>
 
