@@ -54,6 +54,10 @@
   <a href="https://github.com/claudio1code?tab=repositories&q=fract-ol" target="_blank">
     <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/fract-olm.png" alt="Fract-ol" width="130" height="130" />
   </a>
+    <!-- Push_Swap -->
+  <a href="https://github.com/claudio1code?tab=repositories&q=Push_swap" target="_blank">
+    <img src="https://github.com/ayogun/42-project-badges/blob/main/badges/push_swape.png" alt="Push_Swap" width="130" height="130" />
+  </a>
   <!-- Philosophers -->
   <a href="https://github.com/claudio1code?tab=repositories&q=philosophers" target="_blank">
     <img src="https://github.com/ayogun/42-project-badges/blob/main/badges/philosopherse.png" alt="Philosophers" width="130" height="130" />
