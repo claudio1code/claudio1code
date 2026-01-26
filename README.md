@@ -69,3 +69,15 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
 </p>
+
+<div align="center">
+  
+---
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=claudio1code &layout=compact&hide_border=true&bg_color=00000000&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=claudio1code &layout=compact&hide_border=true&bg_color=00000000&theme=radical)
+
+<p align="center">
+    <img alt="claudio's visitors" src="https://komarev.com/ghpvc/?username=claudio1code&color=16b8a7&style=flat&label=visitors" />
+</p>
+
+</div>
