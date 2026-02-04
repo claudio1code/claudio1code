@@ -57,6 +57,9 @@
 <div align="center">
   
 ---
+<div align="center">
+  <img height="180em" src="https://github-readme-stats-chi-khaki-17.vercel.app/api?username=claudio1code&show_icons=true&hide_border=true&title_color=22C55E&text_color=22C55E&icon_color=22C55E&bg_color=1a1a1a"/>
+</div>
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=claudio1code&layout=compact&hide_border=true&bg_color=00000000&theme=tokyonight)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=claudio1code&layout=compact&hide_border=true&bg_color=00000000&theme=tokyonight)
