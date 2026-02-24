@@ -37,10 +37,10 @@
   <a href="https://github.com/claudio1code?tab=repositories&q=born2beroot">
     <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/born2berootm.png" width="130" />
   </a>
-  <br />
   <a href="https://github.com/claudio1code?tab=repositories&q=pipex">
     <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/pipexe.png" width="130" />
   </a>
+   <br />
   <a href="https://github.com/claudio1code?tab=repositories&q=fract-ol">
     <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/fract-olm.png" width="130" />
   </a>
