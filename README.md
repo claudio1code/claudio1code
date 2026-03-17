@@ -37,10 +37,10 @@
   <a href="https://github.com/claudio1code?tab=repositories&q=born2beroot">
     <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/born2berootm.png" width="130" />
   </a>
+   <br />
   <a href="https://github.com/claudio1code?tab=repositories&q=pipex">
     <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/pipexe.png" width="130" />
-  </a>
-   <br />
+  </a> 
   <a href="https://github.com/claudio1code?tab=repositories&q=fract-ol">
     <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/fract-olm.png" width="130" />
   </a>
@@ -53,11 +53,15 @@
   <a href="https://github.com/claudio1code?tab=repositories&q=minishell42_shellShock">
     <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/badges/minishelle.png" width="130" />
   </a>
+  <br />
   <a href="https://github.com/claudio1code?tab=repositories&q=NetPratice">
     <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/badges/netpracticee.png" width="130" />
   </a>
   <a href="https://github.com/claudio1code?tab=repositories&q=CPP_Modulos-00-04">
     <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/badges/cppe.png" width="130" />
+  </a>
+  <a href="https://github.com/claudio1code?tab=repositories&q=Cub3D">
+    <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/badges/cub3dm.png" width="130" />
   </a>
 </div>
 
