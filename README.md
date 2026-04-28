@@ -57,7 +57,7 @@
   <a href="https://github.com/claudio1code?tab=repositories&q=NetPratice">
     <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/badges/netpracticee.png" width="130" />
   </a>
-  <a href="https://github.com/claudio1code?tab=repositories&q=CPP_Modulos-00-04">
+  <a href="https://github.com/claudio1code?tab=repositories&q=CPP_Modulos">
     <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/badges/cppe.png" width="130" />
   </a>
   <a href="https://github.com/claudio1code?tab=repositories&q=Cub3D">
