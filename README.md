@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
   <a href="https://profile.intra.42.fr/users/clados-s" target="_blank">
-    <img src="https://img.shields.io/badge/42_Level-3.79-00BABC?style=for-the-badge&logo=42&logoColor=white&labelColor=000000" alt="42 Level" />
+    <img src="https://img.shields.io/badge/42_Level-5.09-00BABC?style=for-the-badge&logo=42&logoColor=white&labelColor=000000" alt="42 Level" />
   </a>
 
   <br />
