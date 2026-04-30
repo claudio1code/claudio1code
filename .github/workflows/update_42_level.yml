@@ -6,6 +6,9 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch: # Permite que você rode o script manualmente com um botão na aba "Actions"
 
+  permissions:
+  contents: write
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
