@@ -68,32 +68,33 @@
 
 <br />
 
-<div align="center">
-  
 ---
+
+<br />
+
 <div align="center">
   <img height="180em" src="https://github-readme-stats-chi-khaki-17.vercel.app/api?username=claudio1code&show_icons=true&hide_border=true&title_color=22C55E&text_color=22C55E&icon_color=22C55E&bg_color=1a1a1a"/> <a href="https://github.com/Jota4wd"><img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=claudio1code&layout=compact&langs_count=6&theme=tokyonight" /></a> 
 </div>
 
-<p align="center">
-    <img alt="claudio's visitors" src="https://komarev.com/ghpvc/?username=claudio1code&color=16b8a7&style=flat&label=visitors" />
-</p>
+<br />
 
-</div>
+---
+
+<br />
 
 ### 🌐 Badges
 
 <div align="center">
-  <a href="URL_PUBLICA_DA_SUA_BADGE_1" target="_blank">
-    <img src="badges/develop-genai-apps-with-gemini-and-streamlit-skill-.png" width="150" alt="Develop GenAI Apps">
+  <a href="https://www.credly.com/badges/be518cfc-23ee-4903-b6bf-0ff39384c1ea/public_url" target="_blank">
+    <img src="badges/develop-genai-apps-with-gemini-and-streamlit-skill-.png" width="150" alt="Develop GenAI Apps with Gemini and Streamlit">
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="URL_PUBLICA_DA_SUA_BADGE_2" target="_blank">
-    <img src="badges/inspect-rich-documents-with-gemini-multimodality-an.png" width="150" alt="Inspect Rich Documents">
+  <a href="https://www.credly.com/badges/43172fa3-bfc0-4d36-9e67-6e5ae0bd2a41/public_url" target="_blank">
+    <img src="badges/inspect-rich-documents-with-gemini-multimodality-an.png" width="150" alt="Inspect Rich Documents with Gemini Multimodality and Multimodal RAG">
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="URL_PUBLICA_DA_SUA_BADGE_3" target="_blank">
-    <img src="badges/prompt-design-in-vertex-ai-skill-badge.png" width="150" alt="Prompt Design">
+  <a href="https://www.credly.com/badges/5486d1ba-812f-4047-b4aa-855e0181d12a/public_url" target="_blank">
+    <img src="badges/prompt-design-in-vertex-ai-skill-badge.png" width="150" alt="Prompt Design in Vertex AI">
   </a>
 </div>
 
