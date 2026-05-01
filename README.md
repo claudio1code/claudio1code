@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Hi, I'm Claudio Matheus! 👋</h1>
-  <h3>Software Engineer | Student at 42 SP | C, Shell, Linux</h3>
+  <p align="center"><b>Software Engineer | Backend & Automation | C/C++, Python, Unix/Linux</b></p>
   <p><em>"Building efficient solutions, one byte at a time."</em></p>
 
   <a href="https://www.linkedin.com/in/claudiomatheus-dev/">
