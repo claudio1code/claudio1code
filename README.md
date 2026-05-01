@@ -3,15 +3,19 @@
   <p align="center"><b>Software Engineer | Backend & Automation | C/C++, Python, Unix/Linux</b></p>
   <p><em>"Building efficient solutions, one byte at a time."</em></p>
 
-  <a href="https://www.linkedin.com/in/claudiomatheus-dev/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:claudio1.code@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://profile.intra.42.fr/users/clados-s" target="_blank">
-    <img src="https://img.shields.io/badge/42_Level-5.09-00BABC?style=for-the-badge&logo=42&logoColor=white&labelColor=000000" alt="42 Level" />
-  </a>
+ <a href="https://www.linkedin.com/in/claudiomatheus-dev/">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+<a href="mailto:claudio1.code@gmail.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+</a>
+<!-- Novo ícone do Discord abaixo -->
+<a href="https://discordapp.com/users/cclaudiox">
+  <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
+</a>
+<a href="https://profile.intra.42.fr/users/clados-s" target="_blank">
+  <img src="https://img.shields.io/badge/42_Level-5.09-00BABC?style=for-the-badge&logo=42&logoColor=white&labelColor=000000" alt="42 Level" />
+</a>
 
   <br />
   <br />
