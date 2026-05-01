@@ -81,6 +81,22 @@
 
 </div>
 
+### 🌐 Badges
+
+<div align="center">
+  <a href="URL_PUBLICA_DA_SUA_BADGE_1" target="_blank">
+    <img src="badges/develop-genai-apps-with-gemini-and-streamlit-skill-.png" width="150" alt="Develop GenAI Apps">
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="URL_PUBLICA_DA_SUA_BADGE_2" target="_blank">
+    <img src="badges/inspect-rich-documents-with-gemini-multimodality-an.png" width="150" alt="Inspect Rich Documents">
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="URL_PUBLICA_DA_SUA_BADGE_3" target="_blank">
+    <img src="badges/prompt-design-in-vertex-ai-skill-badge.png" width="150" alt="Prompt Design">
+  </a>
+</div>
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
 </p>
