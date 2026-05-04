@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
 </a>
 <a href="https://profile.intra.42.fr/users/clados-s" target="_blank">
-  <img src="https://img.shields.io/badge/42_Level-5.09-00BABC?style=for-the-badge&logo=42&logoColor=white&labelColor=000000" alt="42 Level" />
+  <img src="https://img.shields.io/badge/42_Level-5.68-00BABC?style=for-the-badge&logo=42&logoColor=white&labelColor=000000" alt="42 Level" />
 </a>
 
   <br />
