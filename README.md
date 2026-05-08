@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Hi, I'm Claudio Matheus! 👋</h1>
-  <p align="center"><b>Software Engineer | Backend & Automation | C/C++, Python, Unix/Linux</b></p>
+  <p align="center"><b>Desenvolvedor Python & C/C++ | Automação, IA e Backend | Unix/Linux</b></p>
   <p><em>"Building efficient solutions, one byte at a time."</em></p>
 
  <a href="https://www.linkedin.com/in/claudiomatheus-dev/">
