@@ -3,7 +3,7 @@ name: Update 42 Level Badge
 on:
   schedule:
     # Roda todos os dias às 00:00 UTC
-    - cron: '0 0 * * *'
+    - cron: '0 0 1,10 * *'
   workflow_dispatch: # Permite que você rode o script manualmente com um botão na aba "Actions"
 
 permissions:
