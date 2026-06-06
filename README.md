@@ -91,24 +91,32 @@
 
 ## Top Repositories
 
-<div width="100%">
-  <a href="https://github.com/claudio1code/Essay_Parser">
-    <img align="left" width="48%" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=claudio1code&repo=Essay_Parser&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en" />
-  </a>
-  <a href="https://github.com/claudio1code/minishell42_shellShock">
-    <img align="right" width="48%" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=claudio1code&repo=minishell42_shellShock&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en" />
-  </a>
-</div>
-
-<br clear="all" />
-<br />
-
-<div width="100%">
-  <a href="https://github.com/claudio1code/webserv_42">
-    <img align="left" width="48%" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=claudio1code&repo=webserv_42&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en" />
-  </a>
-</div>
-
+<table width="100%">
+  <tr>
+    <td width="50%">
+      <a href="https://github.com/claudio1code/webserv_42">
+        <img width="100%" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=claudio1code&repo=webserv_42&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en" />
+      </a>
+    </td>
+    <td width="50%">
+      <a href="https://github.com/claudio1code/Inception">
+        <img width="100%" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=claudio1code&repo=Inception&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <a href="https://github.com/claudio1code/Essay_Parser">
+        <img width="100%" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=claudio1code&repo=Essay_Parser&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en" />
+      </a>
+    </td>
+    <td width="50%">
+      <a href="https://github.com/claudio1code/minishell42_shellShock">
+        <img width="100%" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=claudio1code&repo=minishell42_shellShock&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en" />
+      </a>
+    </td>
+  </tr>
+</table>
 <br clear="all" />
 
 <br /><br /><br /><br /><br /><br /><br /><br />
