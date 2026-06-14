@@ -2,7 +2,7 @@
   <h1>Hi, I'm Claudio Matheus! 👋</h1>
   <p align="center"><b>Python & C/C++ Developer | Automation, AI & Backend | Unix/Linux</b></p>
   <p><em>"Building efficient solutions, one byte at a time."</em></p>
-  <p>🎓 Currently pursuing a B.Sc. in Artificial Intelligence (UNIVESP, 2026)</p>
+  <p>🎓 Currently pursuing a Bachelor in Artificial Intelligence (UNIVESP)</p>
 
  <a href="https://www.linkedin.com/in/claudiomatheus-dev/">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
