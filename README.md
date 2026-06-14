@@ -95,7 +95,7 @@
 
 ## 🎓 42 São Paulo — Common Core Curriculum
 
-42 is a project-based, peer-learning computer science program with no teachers or traditional classes (ranked highly in the WURI Innovation rankings). The badges below represent core curriculum projects built from scratch in C and C++, covering low-level memory management, algorithms, Unix systems programming, and network fundamentals.
+42 is a project-based, peer-learning computer science program with no teachers or traditional classes (ranked 3rd in the world for innovation in the WURI rankings for two consecutive years in 2025-2026). The badges below represent core curriculum projects built from scratch in C and C++, covering low-level memory management, algorithms, Unix systems programming, and network fundamentals.
 
 <div align="center">
   <a href="https://profile.intra.42.fr/users/clados-s" target="_blank">
