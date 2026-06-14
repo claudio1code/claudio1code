@@ -93,7 +93,7 @@
 
 ---
 
-## 🎓 42 São Paulo — Core Curriculum
+## 🎓 42 São Paulo — Common Core Curriculum
 
 42 is a project-based, peer-learning computer science program with no teachers or traditional classes (ranked highly in the WURI Innovation rankings). The badges below represent core curriculum projects built from scratch in C and C++, covering low-level memory management, algorithms, Unix systems programming, and network fundamentals.
 
